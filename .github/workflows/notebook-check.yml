@@ -1,0 +1,36 @@
+name: Notebook structure and syntax
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install notebook validator
+        run: python -m pip install nbformat==5.10.4
+      - name: Check notebook format and code syntax (no execution)
+        run: |
+          python - <<'PY'
+          import nbformat
+          nb = nbformat.read('notebooks/MUMDMC2025.ipynb', as_version=4)
+          nbformat.validate(nb)
+          count = 0
+          for i, cell in enumerate(nb.cells):
+              if cell.cell_type != 'code':
+                  continue
+              source = cell.source.strip()
+              if not source or source.startswith(('!', '%')):
+                  continue  # Colab/Jupyter shell and magic commands
+              compile(source, f'cell_{i}', 'exec')
+              count += 1
+          print(f'Notebook valid. Syntax-checked {count} Python cells.')
+          PY

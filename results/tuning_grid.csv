@@ -1,0 +1,10 @@
+Model,Parameter,Value,CV_Accuracy,CV_Macro_F1
+KNN,n_neighbors,1,0.891,0.886
+KNN,n_neighbors,3,0.833,0.823
+KNN,n_neighbors,5,0.755,0.755
+KNN,n_neighbors,7,0.712,0.709
+KNN,n_neighbors,9,0.689,0.676
+Decision Tree,max_depth,5,0.592,0.578
+Decision Tree,max_depth,10,0.64,0.623
+Decision Tree,max_depth,15,0.64,0.623
+Decision Tree,max_depth,None,0.64,0.623

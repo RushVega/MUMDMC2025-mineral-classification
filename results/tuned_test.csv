@@ -1,0 +1,3 @@
+Model,Best_setting,Test_Accuracy,Test_Macro_F1
+KNN,n_neighbors=1,0.872,0.87
+Decision Tree,max_depth=10,0.607,0.585

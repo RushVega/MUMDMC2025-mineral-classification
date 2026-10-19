@@ -1,0 +1,5 @@
+Model,Input_size,Accuracy,Precision_weighted,Recall_weighted,F1_weighted,Macro_F1
+Decision Tree,224x224,0.581,0.589,0.581,0.584,0.584
+KNN (k=5),224x224,0.752,0.765,0.752,0.745,0.752
+Decision Tree,150x150,0.607,0.611,0.607,0.596,0.585
+KNN (k=5),150x150,0.752,0.765,0.752,0.745,0.752

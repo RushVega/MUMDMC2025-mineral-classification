@@ -1,0 +1,22 @@
+# Reference dependencies for Python 3.11–3.12.
+# The notebook is designed for Google Colab, which already includes most packages.
+# Do not reinstall the whole list in Colab unless required; see README.md.
+
+# Numerical computing and classical ML
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.13.1
+scikit-learn==1.5.2
+
+# Images and visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+Pillow==11.1.0
+opencv-python-headless==4.10.0.84
+
+# Public dataset download
+gdown==5.2.0
+
+# Compatible PyTorch / torchvision pair (official PyTorch version matrix)
+torch==2.11.0
+torchvision==0.26.0

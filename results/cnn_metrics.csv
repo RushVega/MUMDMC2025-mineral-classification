@@ -1,0 +1,5 @@
+Model,Stage,Test_Accuracy,Precision_weighted,Recall_weighted,F1_weighted,Macro_F1,ROC_AUC
+EfficientNet-B0,Head only,0.966,0.97,0.966,0.966,0.966,1.0
+EfficientNet-B0,Fine-tuned,0.991,0.992,0.991,0.991,0.993,1.0
+ConvNeXt-Tiny,Head only,1.0,1.0,1.0,1.0,1.0,1.0
+ConvNeXt-Tiny,Fine-tuned,1.0,1.0,1.0,1.0,1.0,1.0

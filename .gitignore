@@ -1,0 +1,35 @@
+# Python / notebook temporary files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Downloaded datasets and generated outputs
+*.zip
+*.tar
+*.tar.gz
+/content/
+outputs/
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Do not commit raw or extracted image data
+data/*
+!data/README.md
+MUMDMC2025_DataSet/
+Cropped_Images/
+
+# Local system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
